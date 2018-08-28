@@ -6,7 +6,7 @@
 
     <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="FillAndExpand"  BindingContext="{x:Reference slider}">
         <!-- Place new controls here -->
-        <Label Text="{Binding Value}"
+        <Label Text="{Binding Value, StringFormat='Slider value = {0:F2}'}"
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         <Slider x:Name="slider" Maximum="100" Minimum="1" BackgroundColor="Aqua" ></Slider>
